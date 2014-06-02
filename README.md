@@ -9,7 +9,8 @@
     ```
     angular.module('myapp',['TiltedPage']);
     ```
-3. Make sure each of your pages gets the ***tps-section*** class and that the inner content is wrapped with a div that has the class ***tps-wrapper***. 
+3. Add the tilted-page attribute to the parent of your pages.
+4. Make sure each of your pages gets the ***tps-section*** class and that the inner content is wrapped with a div that has the class ***tps-wrapper***. 
 
   I haven't modified the widget to watch for changes in the children but probably will at some point. However, just following this step will work for the time being.
 
