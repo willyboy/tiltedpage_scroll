@@ -1,3 +1,27 @@
+#How to use directive
+1. Include directive file (tilted-page-directive)
+
+    ```
+    <script src="js/tilted-page-directive.js></script>
+    ```
+2. Include as a dependency in your app
+
+    ```
+    angular.module('myapp',['TiltedPage']);
+    ```
+3. Make sure each of your pages gets the ***tps-section*** class and that the inner content is wrapped with a div that has the class ***tps-wrapper***. 
+
+  I haven't modified the widget to watch for changes in the children but probably will at some point. However, just following this step will work for the time being.
+
+    ```
+    <section ng-repeat="thing in things" class="tps-section">
+    		<div class='tps-wrapper'>
+    			<header>{{thing.title}}</header>
+    		  <p>{{thing.stuff}}</p>
+    		</div>
+    </section>
+    ```
+
 #Tilted Page Scroll by Pete R.
 Create a beautilful 3D tilted scrolling effect for your website with jQuery Tilted Page Scroll.
 Created by [Pete R.](http://www.thepetedesign.com), Founder of [Travelistly](http://www.Travelistly.com) and [BucketListly](http://www.bucketlistly.com)
